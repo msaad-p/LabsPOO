@@ -63,13 +63,8 @@ public class Agenda {
         if (posicion != -1) {
             Usuario user = registro[posicion];
             System.out.println("--- Información del Usuario ---");
-            System.out.println("ID: " + user.getId());
-            System.out.println("Nombre: " + user.getNombre());
-            System.out.println("Fecha de nacimienti: " + user.getFecha_nacimiento());
-            System.out.println("Ciudad de nacimiento: " + user.getCiudad_nacimiento());
-            System.out.println("Teléfono: " + user.getTel());
-            System.out.println("Correo electrónico: " + user.getEmail());
-            System.out.println("Dirección: " + user.getDir());
+            String userprint = user.toString();
+            System.out.println(userprint);
         } else {
             System.out.println("El usuario con ID " + id + " no se encontró en la agenda.");
         }
