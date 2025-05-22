@@ -33,5 +33,9 @@ public class MainTres {
 
         agenda.mostrarUsuario(user1.getId());
         agenda.mostrarUsuario(user5.getId());
+
+        agenda.eliminar(user2.getId());
+
+        agenda.mostrar();
     }
 }
